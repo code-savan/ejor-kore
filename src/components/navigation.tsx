@@ -6,33 +6,31 @@ import Image from "next/image"
 import { cn } from "@/lib/utils"
 import {
   NavigationMenu,
-  NavigationMenuContent,
+
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
 
-const services = [
-  {
-    title: "Water Treatment",
-    href: "#services",
-    description: "Comprehensive water treatment solutions for all sectors",
-  },
-  {
-    title: "Geotechnical Services",
-    href: "#services",
-    description: "Expert geotechnical engineering and soil analysis",
-  },
-  {
-    title: "Environmental Assessment",
-    href: "#services",
-    description: "Professional environmental evaluation and compliance",
-  },
-]
+// const services = [
+//   {
+//     title: "Water Treatment",
+//     href: "#services",
+//     description: "Comprehensive water treatment solutions for all sectors",
+//   },
+//   {
+//     title: "Geotechnical Services",
+//     href: "#services",
+//     description: "Expert geotechnical engineering and soil analysis",
+//   },
+//   {
+//     title: "Environmental Assessment",
+//     href: "#services",
+//     description: "Professional environmental evaluation and compliance",
+//   },
+// ]
 
 export function Navigation() {
   const [isOpen, setIsOpen] = React.useState(false)
@@ -46,14 +44,14 @@ export function Navigation() {
   }
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-background/80 backdrop-blur-md supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center justify-between">
+    <header className="fixed top-0 z-50 w-full bg-background/80 backdrop-blur-md supports-[backdrop-filter]:bg-background/60">
+      <div className="w-full md:max-w-7xl mx-auto flex items-center justify-between">
         <Link href="/" className="flex items-center">
           <Image
             src="/logo.jpg"
             alt="EJOR-KORE SERVICES LTD Logo"
-            width={60}
-            height={60}
+            width={120}
+            height={120}
             className="rounded-md"
           />
         </Link>
@@ -71,7 +69,7 @@ export function Navigation() {
             </NavigationMenuItem>
             <NavigationMenuItem>
               <button
-                className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background h-10 px-4 py-2"
+                className="text-sm font-medium transition-colors hover:text-orange-600 cursor-pointer px-4 py-2"
                 onClick={() => scrollToSection('services')}
               >
                 Services
@@ -79,7 +77,7 @@ export function Navigation() {
             </NavigationMenuItem>
             <NavigationMenuItem>
               <button
-                className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background h-10 px-4 py-2"
+                className="text-sm font-medium transition-colors hover:text-orange-600 cursor-pointer px-4 py-2"
                 onClick={() => scrollToSection('portfolio')}
               >
                 Portfolio
@@ -87,7 +85,7 @@ export function Navigation() {
             </NavigationMenuItem>
             <NavigationMenuItem>
               <button
-                className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background h-10 px-4 py-2"
+                className="text-sm font-medium transition-colors hover:text-orange-600 cursor-pointer px-4 py-2"
                 onClick={() => scrollToSection('about')}
               >
                 About
@@ -95,7 +93,7 @@ export function Navigation() {
             </NavigationMenuItem>
             <NavigationMenuItem>
               <button
-                className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background h-10 px-4 py-2"
+                className="text-sm font-medium transition-colors hover:text-orange-600 cursor-pointer px-4 py-2"
                 onClick={() => scrollToSection('contact')}
               >
                 Contact
@@ -104,10 +102,10 @@ export function Navigation() {
           </NavigationMenuList>
         </NavigationMenu>
 
-        <div className="flex items-center space-x-4">
-          <Button asChild className="hidden md:inline-flex">
+        <div className="flex items-center space-x-4 ">
+          <Button asChild className="hidden md:inline-flex rounded-none">
             <Link
-              href="https://wa.me/+234XXXXXXXXX"
+              href="https://wa.me/+2348037840713"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -130,41 +128,41 @@ export function Navigation() {
       {/* Mobile Navigation */}
       {isOpen && (
         <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-background border-t">
+          <div className="px-2 pt-4 pb-6 space-y-3 sm:px-3 bg-background/90 backdrop-blur-md">
             <button
-              className="block px-3 py-2 text-base font-medium hover:bg-muted rounded-md w-full text-left"
+              className="block px-3 py-2 text-base font-medium hover:text-orange-600 transition-colors w-full text-left cursor-pointer"
               onClick={() => scrollToSection('home')}
             >
               Home
             </button>
             <button
-              className="block px-3 py-2 text-base font-medium hover:bg-muted rounded-md w-full text-left"
+              className="block px-3 py-2 text-base font-medium hover:text-orange-600 transition-colors w-full text-left cursor-pointer"
               onClick={() => scrollToSection('services')}
             >
               Services
             </button>
             <button
-              className="block px-3 py-2 text-base font-medium hover:bg-muted rounded-md w-full text-left"
+              className="block px-3 py-2 text-base font-medium hover:text-orange-600 transition-colors w-full text-left cursor-pointer"
               onClick={() => scrollToSection('portfolio')}
             >
               Portfolio
             </button>
             <button
-              className="block px-3 py-2 text-base font-medium hover:bg-muted rounded-md w-full text-left"
+              className="block px-3 py-2 text-base font-medium hover:text-orange-600 transition-colors w-full text-left cursor-pointer"
               onClick={() => scrollToSection('about')}
             >
               About
             </button>
             <button
-              className="block px-3 py-2 text-base font-medium hover:bg-muted rounded-md w-full text-left"
+              className="block px-3 py-2 text-base font-medium hover:text-orange-600 transition-colors w-full text-left cursor-pointer"
               onClick={() => scrollToSection('contact')}
             >
               Contact
             </button>
-            <div className="px-3 py-2">
-              <Button asChild className="w-full">
+            <div className="px-3 pt-4">
+              <Button asChild className="w-full bg-orange-600 hover:bg-orange-700 shadow-none">
                 <Link
-                  href="https://wa.me/+234XXXXXXXXX"
+                  href="https://wa.me/+2348037840713"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

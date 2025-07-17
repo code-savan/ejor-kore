@@ -16,22 +16,22 @@ export function Footer() {
               <Image
                 src="/logo.jpg"
                 alt="EJOR-KORE SERVICES LTD Logo"
-                width={40}
-                height={40}
-                className="rounded-md"
+                width={120}
+                height={120}
+                // className="rounded-md"
               />
-              <div>
+              {/* <div>
                 <h3 className="font-bold text-lg">EJOR-KORE</h3>
                 <p className="text-sm text-gray-300">SERVICES LTD</p>
-              </div>
+              </div> */}
             </div>
             <p className="text-gray-300">
               Nigeria&apos;s premier water treatment and geotechnical services company.
               Over 20 years of experience delivering quality solutions.
             </p>
-            <Button className="bg-green-600 hover:bg-green-700" asChild>
+            <Button className="bg-orange-600 hover:bg-orange-700" asChild>
               <Link
-                href="https://wa.me/+234XXXXXXXXX"
+                href="https://wa.me/+2348037840713"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
@@ -119,25 +119,25 @@ export function Footer() {
           <div>
             <h4 className="font-semibold text-lg mb-4">Contact Info</h4>
             <div className="space-y-3">
-              <div className="flex items-start gap-3">
+              <div className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-green-400 mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="text-gray-300">+234 XXX XXX XXXX</p>
-                  <p className="text-gray-300">+234 XXX XXX XXXX</p>
+                  <p className="text-gray-300">+2348037840713</p>
+                  {/* <p className="text-gray-300">+2348037840713</p> */}
                 </div>
               </div>
-              <div className="flex items-start gap-3">
+              <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-green-400 mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="text-gray-300">info@ejorkore.com</p>
-                  <p className="text-gray-300">services@ejorkore.com</p>
+                  <p className="text-gray-300">ejorkoreservices@gmail.com</p>
+                  {/* <p className="text-gray-300">ejorkoreservices@gmail.com</p> */}
                 </div>
               </div>
-              <div className="flex items-start gap-3">
+              <div className="flex items-center gap-3">
                 <MapPin className="h-5 w-5 text-green-400 mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="text-gray-300">Lagos, Nigeria</p>
-                  <p className="text-gray-300">Serving nationwide</p>
+                  <p className="text-gray-300">2 Nnam Street off Ihe Street One-Day Rd. Awkunanaw Enugu</p>
+                  {/* <p className="text-gray-300">Serving nationwide</p> */}
                 </div>
               </div>
             </div>
@@ -146,18 +146,18 @@ export function Footer() {
 
         <Separator className="my-8 bg-gray-700" />
 
-        <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-4">
           <p className="text-gray-400 text-sm">
             © 2024 EJOR-KORE Services Ltd. All rights reserved.
           </p>
-          <div className="flex gap-6 text-sm text-gray-400">
+          {/* <div className="flex gap-6 text-sm text-gray-400">
             <a href="#" className="hover:text-white transition-colors">
               Privacy Policy
             </a>
             <a href="#" className="hover:text-white transition-colors">
               Terms of Service
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
