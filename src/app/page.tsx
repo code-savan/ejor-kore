@@ -1,3 +1,4 @@
+"use client"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import {
@@ -27,6 +28,13 @@ export default function HomePage() {
 }
 
 function HeroSection() {
+    const scrollToSection = (sectionId: string) => {
+        const element = document.getElementById(sectionId)
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' })
+        }
+        // setIsOpen(false)
+      }
   return (
     <section className="relative h-[100dvh] bg-white text-gray-900 flex items-center justify-center">
       <div className="container mx-auto px-4 text-center">
@@ -43,13 +51,17 @@ function HeroSection() {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 cursor-pointer">
           <Button size="lg" className="bg-orange-600 hover:bg-orange-700 text-white rounded-none" asChild>
-            <a href="https://wa.me/+234XXXXXXXXX" target="_blank" rel="noopener noreferrer">
+            <a  href="https://wa.me/+2348037840713?text=Hello%20EJOR-KORE%20SERVICES%20LTD,%20I%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" rel="noopener noreferrer">
               Get Expert Consultation
             </a>
           </Button>
-          <Button size="lg" variant="outline" className="text-orange-600 border-orange-600 hover:bg-orange-600 hover:text-white rounded-none">
+
+          <Button size="lg" variant="outline" className="text-orange-600 border-orange-600 hover:bg-orange-600 hover:text-white rounded-none"
+          onClick={() => scrollToSection('services')}
+          >
             View Our Services
           </Button>
+
         </div>
         <div className="flex justify-center items-center gap-8 text-sm">
           <div className="flex items-center gap-2">
@@ -368,7 +380,7 @@ return (
           </div>
             </div>
 
-          <div className="  relative hover:shadow-sm transition-shadow duration-300">
+          <div className="h-[400px] md:h-auto  relative hover:shadow-sm transition-shadow duration-300">
             <div className="absolute top-4 right-4 text-orange-400">+</div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d33189.18226148445!2d7.4797772824573165!3d6.442693571671848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1044a1dd76c32d51%3A0x422a2e081ff0e61d!2sOne%20Day%20International%20Hotel!5e0!3m2!1sen!2sng!4v1752752351572!5m2!1sen!2sng" width="100%" height="100%" style={{border:0}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
           </div>

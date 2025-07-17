@@ -17,7 +17,7 @@ export function WhatsAppButton() {
           rel="noopener noreferrer"
           aria-label="Contact us on WhatsApp"
         >
-          <MessageCircle className="h-6 w-6" />
+          <MessageCircle className="h-8 w-8" />
         </a>
       </Button>
     </div>

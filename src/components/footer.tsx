@@ -61,6 +61,17 @@ export function Footer() {
                 <button
                   className="text-gray-300 hover:text-white transition-colors"
                   onClick={() => {
+                    const element = document.getElementById('about')
+                    if (element) element.scrollIntoView({ behavior: 'smooth' })
+                  }}
+                >
+                  About
+                </button>
+              </li>
+              <li>
+                <button
+                  className="text-gray-300 hover:text-white transition-colors"
+                  onClick={() => {
                     const element = document.getElementById('services')
                     if (element) element.scrollIntoView({ behavior: 'smooth' })
                   }}
@@ -68,7 +79,7 @@ export function Footer() {
                   Services
                 </button>
               </li>
-              <li>
+              {/* <li>
                 <button
                   className="text-gray-300 hover:text-white transition-colors"
                   onClick={() => {
@@ -78,18 +89,8 @@ export function Footer() {
                 >
                   Portfolio
                 </button>
-              </li>
-              <li>
-                <button
-                  className="text-gray-300 hover:text-white transition-colors"
-                  onClick={() => {
-                    const element = document.getElementById('about')
-                    if (element) element.scrollIntoView({ behavior: 'smooth' })
-                  }}
-                >
-                  About
-                </button>
-              </li>
+              </li> */}
+
               <li>
                 <button
                   className="text-gray-300 hover:text-white transition-colors"
