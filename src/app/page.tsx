@@ -37,7 +37,7 @@ function HeroSection() {
       }
   return (
     <section className="relative h-[100dvh] bg-white text-gray-900 flex items-center justify-center">
-      <div className="container mx-auto px-4 text-center">
+      <div className="container mx-auto px-4 text-center mt-8 md:mt-0">
         <Badge className="mb-6 bg-orange-600 hover:bg-orange-600 shadow-md text-white cursor-pointer rounded-[30px]">
           <CheckCircle className="h-5 w-5 text-white" />
           Nigeria&apos;s Premier Water Treatment & Geotechnical Experts
