@@ -1,36 +1,114 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# EJOR-KORE SERVICES LTD - Professional Website
+
+A modern, professional website for EJOR-KORE SERVICES LTD, Nigeria's premier water treatment and geotechnical services company.
+
+## Features
+
+- **Modern Design**: Clean, professional design with responsive layout
+- **Single Page Application**: All content in sections with smooth scrolling navigation
+- **WhatsApp Integration**: Floating WhatsApp button and contact CTAs
+- **Services Showcase**: Comprehensive display of water treatment and geotechnical services
+- **Client Testimonials**: Social proof with customer reviews
+- **Project Portfolio**: Showcase of recent completed projects
+- **Company Information**: About section with company history and expertise
+- **Contact Information**: Multiple ways to get in touch
+
+## Technology Stack
+
+- **Framework**: Next.js 14+ (App Router)
+- **Styling**: Tailwind CSS
+- **Components**: shadcn/ui
+- **Icons**: Lucide React
+- **Deployment**: Vercel-ready
 
 ## Getting Started
 
-First, run the development server:
+1. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2. **Add your logo**:
+   - Replace `public/logo.jpg` with your actual company logo
+   - Ensure it's sized appropriately (recommended: 150x150px)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. **Update contact information**:
+   - Replace `+234XXXXXXXXX` with your actual WhatsApp number
+   - Update email addresses in the contact section
+   - Update company address and location
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+4. **Run the development server**:
+   ```bash
+   npm run dev
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+5. **Open your browser**:
+   - Navigate to [http://localhost:3000](http://localhost:3000)
 
-## Learn More
+## Customization
 
-To learn more about Next.js, take a look at the following resources:
+### WhatsApp Integration
+Update the WhatsApp number in the following files:
+- `src/components/whatsapp-button.tsx`
+- `src/components/navigation.tsx`
+- `src/components/footer.tsx`
+- `src/app/page.tsx`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Company Information
+Update company details in:
+- `src/app/layout.tsx` (metadata)
+- `src/app/page.tsx` (all sections)
+- `src/components/footer.tsx`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Services
+Modify services in `src/app/page.tsx` in the `ServicesOverview` function to match your specific offerings.
 
-## Deploy on Vercel
+### Project Images
+Add actual project images to the `public` folder and update the image paths in the `RecentProjects` section.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Vercel (Recommended)
+1. Push your code to GitHub
+2. Connect your repository to Vercel
+3. Deploy with one click
+
+### Manual Deployment
+1. Build the project:
+   ```bash
+   npm run build
+   ```
+2. Deploy the `out` directory to your hosting provider
+
+## Performance Optimizations
+
+- **Image Optimization**: Uses Next.js Image component for optimal loading
+- **Code Splitting**: Automatic code splitting for better performance
+- **SEO Optimized**: Proper meta tags and semantic HTML
+- **Mobile First**: Responsive design for all devices
+- **Fast Loading**: Optimized for Lighthouse scores 90+
+
+## Sections
+
+1. **Hero Section**: Compelling headline with main CTA
+2. **Services Overview**: Four main service categories
+3. **Why Choose Us**: Company differentiators
+4. **Recent Projects**: Portfolio showcase
+5. **Client Testimonials**: Social proof
+6. **About Section**: Company information
+7. **Contact Section**: Multiple contact methods
+
+## Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+
+## Support
+
+For technical support or customization requests, contact your development team.
+
+---
+
+© 2024 EJOR-KORE Services Ltd. All rights reserved.
