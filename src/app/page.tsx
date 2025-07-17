@@ -40,14 +40,14 @@ function HeroSection() {
       <div className="container mx-auto px-4 text-center mt-8 md:mt-0">
         <Badge className="mb-6 bg-orange-600 hover:bg-orange-600 shadow-md text-white cursor-pointer rounded-[30px]">
           <CheckCircle className="h-5 w-5 text-white" />
-          Nigeria&apos;s Premier Water Treatment & Geotechnical Experts
+          Nigeria&apos;s Premier Borehole Drilling & Geotechnical Experts
         </Badge>
         <h1 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
-          Professional Water Treatment {'&'} Geotechnical Solutions
+          Professional <span className="text-orange-600">Borehole Drilling</span> {'&'} Geotechnical Solutions
         </h1>
         <p className="text-xl md:text-xl mb-8 text-gray-600 max-w-3xl mx-auto">
-          Over 20 years of experience delivering quality services across Nigeria.
-          Certified professionals with state-of-the-art equipment.
+          Over 20 years of experience delivering quality borehole drilling services across Nigeria.
+          Expert team using rotary and hammer drilling methods with state-of-the-art equipment.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 cursor-pointer">
           <Button size="lg" className="bg-orange-600 hover:bg-orange-700 text-white rounded-none" asChild>
@@ -85,28 +85,28 @@ function HeroSection() {
 function ServicesOverview() {
   const services = [
     {
-      title: "Water Treatment Solutions",
-      description: "Comprehensive water treatment systems for residential, commercial, and industrial applications.",
+      title: "Borehole Drilling Services",
+      description: "Professional borehole drilling for water access using rotary and hammer drilling methods.",
       icon: <Droplets className="h-8 w-8 text-blue-600" />,
-      features: ["Home filtration systems", "Commercial water solutions", "Industrial treatment"]
+      features: ["Shallow boreholes (< 100m)", "Medium-depth (100-300m)", "Deep boreholes (300-600m)"]
     },
     {
-      title: "Geotechnical Engineering",
-      description: "Expert geotechnical services for construction and development projects.",
+      title: "Borehole Development",
+      description: "Complete borehole development from site preparation to testing and commissioning.",
       icon: <Mountain className="h-8 w-8 text-green-600" />,
-      features: ["Foundation design", "Slope stability analysis", "Construction monitoring"]
+      features: ["Site preparation", "Casing and cementing", "Screen installation"]
     },
     {
-      title: "Soil Testing & Analysis",
-      description: "Professional soil testing and analysis services for construction projects.",
+      title: "Geotechnical Services",
+      description: "Expert geological assessment to determine optimal drilling locations and methods.",
       icon: <Shield className="h-8 w-8 text-orange-600" />,
-      features: ["Soil composition analysis", "Bearing capacity assessment", "Site investigation"]
+      features: ["Geological surveys", "Drilling method selection", "Formation analysis"]
     },
     {
-      title: "Environmental Assessment",
-      description: "Comprehensive environmental evaluation and compliance services.",
+      title: "Testing & Maintenance",
+      description: "Comprehensive borehole testing, development and maintenance services.",
       icon: <CheckCircle className="h-8 w-8 text-purple-600" />,
-      features: ["Contamination assessment", "Environmental compliance", "Remediation planning"]
+      features: ["Pump testing", "Water quality analysis", "Borehole rehabilitation"]
     },
   ]
 
@@ -116,8 +116,8 @@ function ServicesOverview() {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            We provide comprehensive water treatment and geotechnical services
-            tailored to meet your specific needs.
+            We provide comprehensive <span className="font-semibold text-orange-600">borehole drilling</span> and geotechnical services
+            tailored to meet your specific water access needs.
           </p>
         </div>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
@@ -158,19 +158,19 @@ function WhyChooseUs() {
   const reasons = [
     {
       title: "20+ Years Experience",
-      description: "Extensive experience in Nigerian market with proven expertise"
+      description: "Extensive borehole drilling experience across diverse Nigerian geological formations"
     },
     {
-      title: "Certified Professionals",
-      description: "All our engineers and technicians are certified and qualified"
+      title: "Advanced Drilling Methods",
+      description: "Both rotary and hammer drilling capabilities for all geological conditions"
     },
     {
-      title: "State-of-the-Art Equipment",
-      description: "Modern technology and equipment for accurate results"
+      title: "Proven Track Record",
+      description: "Successfully drilled boreholes from 100m to over 600m deep"
     },
     {
-      title: "Customer Satisfaction",
-      description: "100% satisfaction guarantee on all our services"
+      title: "Complete Solutions",
+      description: "From site preparation to testing - we handle every stage of borehole development"
     }
   ]
 
@@ -180,7 +180,7 @@ function WhyChooseUs() {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Choose EJOR-KORE</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            We are Nigeria&apos;s trusted partner for water treatment and geotechnical services
+            We are Nigeria&apos;s trusted partner for <span className="font-semibold text-orange-600">borehole drilling</span> and geotechnical services
           </p>
         </div>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
@@ -240,19 +240,19 @@ function ClientTestimonials() {
     {
       name: "Dr. Adebayo Ogun",
       position: "Project Manager, Lagos Construction Ltd",
-      testimonial: "EJOR-KORE delivered exceptional geotechnical services for our project. Their expertise and professionalism exceeded our expectations.",
+      testimonial: "EJOR-KORE successfully drilled a 350m deep borehole for our project. Their geological assessment was spot-on and the water yield exceeded expectations.",
       rating: 5
     },
     {
       name: "Mrs. Fatima Hassan",
       position: "Operations Director, Abuja Water Systems",
-      testimonial: "Outstanding water treatment solutions! The team was professional, efficient, and delivered results on time.",
+      testimonial: "Outstanding borehole drilling service! They completed our 250m borehole in just 15 days, ahead of schedule and with excellent water quality.",
       rating: 5
     },
     {
       name: "Engr. Chidi Okoro",
       position: "Chief Engineer, Industrial Solutions Inc",
-      testimonial: "Their technical expertise and attention to detail made all the difference in our industrial water treatment project.",
+      testimonial: "Their expertise in drilling through hard rock formations saved us time and money. The 600m deep borehole they delivered is performing excellently.",
       rating: 5
     }
   ]
@@ -297,25 +297,26 @@ function AboutSection() {
           <div>
             <h2 className="text-4xl font-bold text-gray-900 mb-6">About EJOR-KORE Services</h2>
             <p className="text-base text-gray-600 mb-6">
-              Established with a vision to provide top-quality water treatment and geotechnical services
-              across Nigeria, EJOR-KORE Services Ltd has become a trusted name in the industry.
+              Established with a vision to provide top-quality <span className="font-semibold">borehole drilling</span> and geotechnical services
+              across Nigeria, EJOR-KORE Services Ltd has become a trusted name in the water access industry.
             </p>
             <p className="text-base text-gray-600 mb-6">
-              Our team of certified professionals brings over 20 years of combined experience,
-              utilizing state-of-the-art equipment and proven methodologies to deliver exceptional results.
+              Our team of certified drilling professionals brings over 20 years of combined experience,
+              utilizing both rotary and hammer drilling methods with state-of-the-art equipment to deliver exceptional results
+              in all geological conditions.
             </p>
             <div className="space-y-4">
               <div className="flex items-center gap-3">
                 <CheckCircle className="h-6 w-6 text-orange-500" />
-                <span className="text-base">Founded on expertise and reliability</span>
+                <span className="text-base">Expert borehole drilling from 100m to over 600m deep</span>
               </div>
               <div className="flex items-center gap-3">
                 <CheckCircle className="h-6 w-6 text-orange-500" />
-                <span className="text-base">Serving residential, commercial, and industrial clients</span>
+                <span className="text-base">Complete development: site prep to commissioning</span>
               </div>
               <div className="flex items-center gap-3">
                 <CheckCircle className="h-6 w-6 text-orange-500" />
-                <span className="text-base">Committed to environmental sustainability</span>
+                <span className="text-base">Proven success in all Nigerian geological formations</span>
               </div>
             </div>
           </div>
