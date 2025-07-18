@@ -26,8 +26,8 @@ export function Footer() {
               </div> */}
             </div>
             <p className="text-gray-300">
-              Nigeria&apos;s premier water treatment and geotechnical services company.
-              Over 20 years of experience delivering quality solutions.
+              Nigeria&apos;s premier <span className="text-orange-400 font-semibold">borehole drilling</span> and geotechnical services company.
+              Over 20 years of experience delivering quality drilling solutions.
             </p>
             <Button className="bg-orange-600 hover:bg-orange-700" asChild>
               <Link
@@ -109,10 +109,10 @@ export function Footer() {
           <div>
             <h4 className="font-semibold text-lg mb-4">Our Services</h4>
             <ul className="space-y-2 text-gray-300">
-              <li>Water Treatment Solutions</li>
-              <li>Geotechnical Engineering</li>
-              <li>Soil Testing & Analysis</li>
-              <li>Environmental Assessment</li>
+              <li>Borehole Drilling (100m - 600m+)</li>
+              <li>Complete Borehole Development</li>
+              <li>Geotechnical Site Assessment</li>
+              <li>Borehole Testing & Maintenance</li>
             </ul>
           </div>
 
