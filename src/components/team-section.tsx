@@ -94,7 +94,7 @@ export default function TeamSection() {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Team</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Meet the dedicated professionals behind EJOR-KORE's success
+            Meet the dedicated professionals behind EJOR-KORE&apos;s success
           </p>
         </div>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
@@ -118,8 +118,8 @@ export default function TeamSection() {
                 </p>
               </CardContent>
               <div className="absolute bottom-3 -translate-x-1/2 left-1/2 w-[90%]">
-                <Button 
-                  className="w-full mt-4 cursor-pointer group-hover:-translate-y-0.5 transition-all duration-300" 
+                <Button
+                  className="w-full mt-4 cursor-pointer group-hover:-translate-y-0.5 transition-all duration-300"
                   variant="outline"
                   onClick={() => handleOpenModal(member)}
                 >
