@@ -12,6 +12,7 @@ import { Badge } from "@/components/ui/badge"
 // import { Separator } from "@/components/ui/separator"
 import { Droplets, Mountain, Shield, CheckCircle, Star, MessageCircle, Mail, } from "lucide-react"
 import Link from "next/link"
+import TeamSection from "@/components/team-section"
 
 export default function HomePage() {
   return (
@@ -20,6 +21,7 @@ export default function HomePage() {
       <AboutSection />
       <ServicesOverview />
       <WhyChooseUs />
+      <TeamSection />
       {/* <RecentProjects /> */}
       <ClientTestimonials />
       <ContactSection />
@@ -88,7 +90,7 @@ function ServicesOverview() {
       title: "Borehole Drilling Services",
       description: "Professional borehole drilling for water access using rotary and hammer drilling methods.",
       icon: <Droplets className="h-8 w-8 text-blue-600" />,
-      features: ["Shallow boreholes (< 100m)", "Medium-depth (100-300m)", "Deep boreholes (300-600m)"]
+      features: ["Shallow boreholes (< 50m)", "Medium-depth (100-200m)", "Deep boreholes (200-400m)"]
     },
     {
       title: "Borehole Development",
@@ -308,7 +310,7 @@ function AboutSection() {
             <div className="space-y-4">
               <div className="flex items-center gap-3">
                 <CheckCircle className="h-6 w-6 text-orange-500" />
-                <span className="text-base">Expert borehole drilling from 100m to over 600m deep</span>
+                <span className="text-base">Expert borehole drilling from 10m to over 400m deep</span>
               </div>
               <div className="flex items-center gap-3">
                 <CheckCircle className="h-6 w-6 text-orange-500" />

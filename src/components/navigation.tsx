@@ -84,6 +84,15 @@ export function Navigation() {
               </button>
             </NavigationMenuItem>
 
+            <NavigationMenuItem>
+              <button
+                className="text-sm font-medium transition-colors hover:text-orange-600 cursor-pointer px-4 py-2"
+                onClick={() => scrollToSection('team')}
+              >
+                Team
+              </button>
+            </NavigationMenuItem>
+
             {/* <NavigationMenuItem>
               <button
                 className="text-sm font-medium transition-colors hover:text-orange-600 cursor-pointer px-4 py-2"
@@ -148,6 +157,12 @@ export function Navigation() {
               onClick={() => scrollToSection('services')}
             >
               Services
+            </button>
+            <button
+              className="block px-3 py-2 text-base font-medium hover:text-orange-600 transition-colors w-full text-left cursor-pointer"
+              onClick={() => scrollToSection('team')}
+            >
+              Team
             </button>
             {/* <button
               className="block px-3 py-2 text-base font-medium hover:text-orange-600 transition-colors w-full text-left cursor-pointer"
