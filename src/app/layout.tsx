@@ -8,7 +8,7 @@ import { Footer } from "@/components/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "EJOR-KORE SERVICES LTD - Premier Water Treatment & Geotechnical Experts",
+  title: "EJOR-KORE SERVICES LTD - Professional Borehole Drilling & Geotechnical Solutions",
   description: "Nigeria's leading Professional Borehole Drilling & Geotechnical Solutions",
   keywords: "Borehole Drilling, geotechnical services, soil testing, Nigeria, environmental assessment",
   authors: [{ name: "EJOR-KORE SERVICES LTD" }],
