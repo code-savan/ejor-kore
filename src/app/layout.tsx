@@ -9,8 +9,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "EJOR-KORE SERVICES LTD - Premier Water Treatment & Geotechnical Experts",
-  description: "Nigeria's leading water treatment and geotechnical services company. Expert solutions for residential, commercial, and industrial clients.",
-  keywords: "water treatment, geotechnical services, soil testing, Nigeria, environmental assessment",
+  description: "Nigeria's leading Professional Borehole Drilling & Geotechnical Solutions",
+  keywords: "Borehole Drilling, geotechnical services, soil testing, Nigeria, environmental assessment",
   authors: [{ name: "EJOR-KORE SERVICES LTD" }],
   viewport: "width=device-width, initial-scale=1",
 };
