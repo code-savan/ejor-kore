@@ -12,7 +12,7 @@ export function WhatsAppButton() {
         asChild
       >
         <a
-          href="https://wa.me/+2348037840713?text=Hello%20EJOR-KORE%20SERVICES%20LTD,%20I%20would%20like%20to%20inquire%20about%20your%20services."
+          href="https://wa.link/k1c971"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Contact us on WhatsApp"

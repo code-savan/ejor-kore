@@ -116,7 +116,7 @@ export function Navigation() {
         <div className="flex items-center space-x-4 ">
           <Button asChild className="hidden md:inline-flex rounded-none">
             <Link
-              href="https://wa.me/+2348037840713"
+              href="https://wa.link/k1c971"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -179,7 +179,7 @@ export function Navigation() {
             <div className="px-3 pt-4">
               <Button asChild className="w-full bg-orange-600 hover:bg-orange-700 shadow-none">
                 <Link
-                  href="https://wa.me/+2348037840713"
+                  href="https://wa.link/k1c971"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

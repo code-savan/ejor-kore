@@ -31,7 +31,7 @@ export function Footer() {
             </p>
             <Button className="bg-orange-600 hover:bg-orange-700" asChild>
               <Link
-                href="https://wa.me/+2348037840713"
+                href="https://wa.link/k1c971"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
@@ -79,6 +79,17 @@ export function Footer() {
                   Services
                 </button>
               </li>
+              <li>
+                <button
+                  className="text-gray-300 hover:text-white transition-colors"
+                  onClick={() => {
+                    const element = document.getElementById('team')
+                    if (element) element.scrollIntoView({ behavior: 'smooth' })
+                  }}
+                >
+                  Team
+                </button>
+              </li>
               {/* <li>
                 <button
                   className="text-gray-300 hover:text-white transition-colors"
@@ -109,7 +120,7 @@ export function Footer() {
           <div>
             <h4 className="font-semibold text-lg mb-4">Our Services</h4>
             <ul className="space-y-2 text-gray-300">
-              <li>Borehole Drilling (100m - 600m+)</li>
+              <li>Borehole Drilling (10m - 400m+)</li>
               <li>Complete Borehole Development</li>
               <li>Geotechnical Site Assessment</li>
               <li>Borehole Testing & Maintenance</li>

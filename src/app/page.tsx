@@ -53,7 +53,7 @@ function HeroSection() {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 cursor-pointer">
           <Button size="lg" className="bg-orange-600 hover:bg-orange-700 text-white rounded-none" asChild>
-            <a  href="https://wa.me/+2348037840713?text=Hello%20EJOR-KORE%20SERVICES%20LTD,%20I%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" rel="noopener noreferrer">
+            <a  href="https://wa.link/k1c971" target="_blank" rel="noopener noreferrer">
               Get Expert Consultation
             </a>
           </Button>
@@ -362,7 +362,7 @@ return (
               </div>
               <h3 className="text-xl font-bold mb-2 text-black/90">WhatsApp</h3>
               <Link
-                href="https://wa.me/+2348037840713"
+                href="https://wa.link/k1c971"
                 target="_blank"
                 rel="noopener noreferrer"
               >
